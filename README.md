@@ -41,15 +41,15 @@ dataset/
 │ ├── images/
 │ └── labels/
 
-2. Install Required Libraries
+## Install Required Libraries
 pip install kaggle ultralytics
 
-3. Configure Kaggle
+## Configure Kaggle
 mkdir -p ~/.kaggle
 mv kaggle.json ~/.kaggle/
 chmod 600 ~/.kaggle/kaggle.json
 
-Dataset Download
+## Dataset Download
 The dataset is downloaded directly from Kaggle and extracted locally:
 kaggle datasets download -d <dataset-name>
 unzip <dataset-name>.zip -d /content/dataset
@@ -61,65 +61,65 @@ nc: <number_of_classes>
 names: [class_1, class_2, ..., class_n]
 This file is required by YOLOv8 during training and validation.
 
-Training Parameters
-Epochs: 10
-Image Size: 640 × 640
-Batch Size: 16
-Optimizer: Automatically selected by YOLOv8
+## Training Parameters
+- Epochs: 10
+- Image Size: 640 × 640
+- Batch Size: 16
+- Optimiser: Automatically selected by YOLOv8
 
-Evaluation Metrics
-Precision
-Recall
-mAP@0.5
-mAP@0.5:0.95
-These metrics measure detection accuracy and generalization performance.
+## Evaluation Metrics
+- Precision
+- Recall
+- mAP@0.5
+- mAP@0.5:0.95
+These metrics measure detection accuracy and generalisation performance.
 
-Inference & Prediction
+## Inference & Prediction
 results = model.predict(
     source='path/to/images',
     conf=0.5,
     save=True
 )
 
-Bounding boxes and class labels are drawn on images
-Predictions are saved automatically
-Confidence threshold is configurable
-Training & Loss Visualization
+- Bounding boxes and class labels are drawn on images
+- Predictions are saved automatically
+- Confidence threshold is configurable
+- Training & Loss Visualization
 
-Metrics Visualized
-Precision
-Recall
-mAP@0.5
-Loss Components
-Box Loss
-Classification Loss
-Distribution Focal Loss (DFL)
+## Metrics Visualized
+- Precision
+- Recall
+- mAP@0.5
+- Loss Components
+- Box Loss
+- Classification Loss
+- Distribution Focal Loss (DFL)
 All plots help analyze convergence and model stability.
 
-Output Directory
+## Output Directory
 All outputs are stored under:
 runs/detect/
 
 This includes:
-Trained model weights
-Validation metrics
-Prediction images
-Training logs
+- Trained model weights
+- Validation metrics
+- Prediction images
+- Training logs
 
-Applications
-Crop disease monitoring
-Precision agriculture
-Smart farming systems
-Agricultural research
-AI-based advisory tools
+## Applications
+- Crop disease monitoring
+- Precision agriculture
+- Smart farming systems
+- Agricultural research
+- AI-based advisory tools
 
-Future Improvements
-Support for additional crop species
-Real-time camera-based detection
-Mobile or web deployment
-Disease severity estimation
-Integration with weather and soil data
+## Future Improvements
+- Support for additional crop species
+- Real-time camera-based detection
+- Mobile or web deployment
+- Disease severity estimation
+- Integration with weather and soil data
 
-License
+# License
 This project is intended for educational and research purposes.
 Dataset licenses are governed by their respective sources.
