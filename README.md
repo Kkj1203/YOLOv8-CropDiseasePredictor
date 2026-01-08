@@ -1,4 +1,4 @@
-#🌱 YOLOv8 Crop Disease Detection System 🌾
+# 🌱 YOLOv8 Crop Disease Detection System 🌾
 
 This project implements a **deep learning–based crop disease detection pipeline** using **YOLOv8**, a modern real-time object detection model.  
 It detects and classifies multiple crop leaf diseases from images and is suitable for academic projects, agricultural analytics, and applied computer vision use cases.
