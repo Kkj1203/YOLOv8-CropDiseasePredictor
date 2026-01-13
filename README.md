@@ -34,12 +34,12 @@ Crop diseases can significantly reduce agricultural yield and quality. This syst
 
 The dataset follows the standard **YOLO directory format**:
 dataset/
-├── train/
-│ ├── images/
-│ └── labels/
-├── val/
-│ ├── images/
-│ └── labels/
+- ├── train/
+- │ ├── images/
+- │ └── labels/
+- ├── val/
+- │ ├── images/
+- │ └── labels/
 
 ## 📦 Install Required Libraries
 pip install kaggle ultralytics
